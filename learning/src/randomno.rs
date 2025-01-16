@@ -10,20 +10,15 @@ pub fn play_guessing_game(secret_number: u32) {
     println!("I'm thinking of a number between 1 and 1000. Can you guess it?");
 
     loop {
-        // Prompt the user for a guess
         println!("Enter your guess (or 'quit' to exit):");
-
-        // Read the user's guess
         let mut guess = String::new();
         std::io::stdin().read_line(&mut guess).expect("Failed to read guess");
 
-        // Check if the user wants to quit
         if guess.trim().to_lowercase() == "quit" {
             println!("Thanks for playing!");
             break; // Exit the loop
         }
 
-        // Convert the guess to a number
         let guess_number: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => {
@@ -32,7 +27,10 @@ pub fn play_guessing_game(secret_number: u32) {
             }
         };
 
-        // Check if the guess is correct
+
+
+
+        
         if guess_number == secret_number {
             println!("Congratulations! You guessed the number!");
             break; // Exit the loop
