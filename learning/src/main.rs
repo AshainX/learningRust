@@ -11,6 +11,7 @@ mod looping;
 //    randomno::play_guessing_game(secret_number);
 // }
 
+//---------------------------
 
 // fn main() {
 
@@ -18,10 +19,11 @@ mod looping;
 
 // }
 
+//---------------------------
+
 // fn main() {
 
 //    //guess::guessFunction();
-
 
 //    // let t= true;
 //    // let f: bool = false;
@@ -33,6 +35,9 @@ mod looping;
 //    println!("number is {fiveHundered}");
 
 // }
+
+//---------------------------
+
 
 // fn main() {
 //    let a = [1,2,3,4,5,6,7,8];// normal type 
@@ -47,8 +52,11 @@ mod looping;
 
 // }
 
+//---------------------------
+
 fn main() {
 
    looping::looptest();
 }
 
+//---------------------------
